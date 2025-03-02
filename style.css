@@ -6,11 +6,29 @@
     font-family: "poppins", sans-serif;
     
 }
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
 
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0,0 , 0.1);
+    padding: 25px;
+}
 .image {
     position:relative;
     height: 150px;
     width: 150px;
+    margin-bottom: 10px;
   
 }
 
@@ -19,5 +37,21 @@
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border : 3px solid ;
+    border : 3px solid #4070f4;
+  
+}
+
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job {
+    font-size: 15px;
+    font-weight: 400;
 }
